@@ -33,11 +33,3 @@ script = null
 [node name="Enemy3" parent="." instance=ExtResource("1_80hr5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 65, 100)
 script = null
-
-[node name="Enemy4" parent="." instance=ExtResource("1_80hr5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 65, 100)
-script = null
-
-[node name="Enemy5" parent="." instance=ExtResource("1_80hr5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60, 65, 100)
-script = null

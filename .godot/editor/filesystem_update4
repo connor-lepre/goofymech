@@ -9,3 +9,4 @@ res://Scenes/Mech/Scenes/test_area.tscn
 res://Scenes/Mech/Scripts/RobotController.gd
 res://Scenes/Mech/Animations/Other_1.res
 res://Scenes/Mech/Animations/walk.res
+res://Scripts/player_behavior.gd

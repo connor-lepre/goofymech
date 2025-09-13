@@ -139,12 +139,13 @@ func _punch(dir: int) -> void:
 		.set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN)
 
 func _unhandled_input(event: InputEvent) -> void:
-	#if event.is_action_pressed("punch_left"):
-		#punch_left()
-	#if event.is_action_pressed("punch_right"):
-		#punch_right()
+	if event.is_action_pressed("punch_left"):
+		punch_left()
+	if event.is_action_pressed("punch_right"):
+		punch_right()
 	if event.is_action_pressed("auto_forward"):
 		auto_forward = !auto_forward
+		print("auto_forward = ", auto_forward)
 
 func _play_anim_safe(name: String) -> void:
 	if name == "" or _anim == null:
