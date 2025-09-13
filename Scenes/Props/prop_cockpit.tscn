@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8xe5sx3bcaf"]
+
+[ext_resource type="PackedScene" uid="uid://kqpa4617xnld" path="res://Scenes/Props/button.tscn" id="2_570h2"]
+[ext_resource type="PackedScene" uid="uid://ck3weatx4ste5" path="res://Scenes/Props/plane.tscn" id="3_g8g2x"]
+
+[node name="cockpit" type="Node3D"]
+
+[node name="button" parent="." instance=ExtResource("2_570h2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -0.8, 6)
+
+[node name="button2" parent="." instance=ExtResource("2_570h2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -0.8, 6)
+
+[node name="ground" parent="." instance=ExtResource("3_g8g2x")]
+transform = Transform3D(1, 0, 0, 0, 0.999911, -0.013316, 0, 0.013316, 0.999911, 0, -1, 0)
+
+[node name="wall" parent="." instance=ExtResource("3_g8g2x")]
+transform = Transform3D(-4.37114e-08, -1, -6.95929e-16, 0.999903, -4.37071e-08, -0.0139621, 0.0139621, -6.10305e-10, 0.999903, 6, 0, 0)
+
+[node name="wall2" parent="." instance=ExtResource("3_g8g2x")]
+transform = Transform3D(-4.37114e-08, -1, -6.95929e-16, 0.999903, -4.37071e-08, -0.0139621, 0.0139621, -6.10305e-10, 0.999903, -6, 0, 0)
+
+[node name="wall3" parent="." instance=ExtResource("3_g8g2x")]
+transform = Transform3D(0.0139622, 4.31011e-08, 0.999903, 0.999903, -4.37071e-08, -0.0139622, 4.31011e-08, 1, -4.37071e-08, 0, 0, -6)
+
+[node name="roof" parent="." instance=ExtResource("3_g8g2x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8, 0)

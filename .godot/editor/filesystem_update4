@@ -1,0 +1,17 @@
+res://cockpit.tscn
+res://Scenes/cockpit.tscn
+res://Scenes/player.tscn
+res://Scenes/static_body_3d.tscn
+res://Scenes/button.tscn
+res://Scenes/enemy.tscn
+res://Scenes/level.tscn
+res://Scenes/Props/plane.tscn
+res://Scenes/Props/button.tscn
+res://Scenes/Enemies/orb_enemy.tscn
+res://Scenes/main.tscn
+res://Scenes/Menus/main_menu.tscn
+res://Scenes/Menus/pause_menu.tscn
+res://Scenes/Menus/settings_menu.tscn
+res://Scripts/CharacterBody3D.gd
+res://Scenes/prop_cockpit.tscn
+res://Scenes/Levels/level.tscn

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="goofymech"
-run/main_scene="res://cockpit.tscn"
+run/main_scene="uid://cjq2ob4m6dyiw"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://Attributions/First Person Template - SoyKhaler/icon.png"
 

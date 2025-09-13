@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://chwnsysxfes3t"]
+
+[node name="RightArm" type="Node3D"]

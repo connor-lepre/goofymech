@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://br01chminlckq"]
 
-[ext_resource type="Script" uid="uid://dweb0ikp88kls" path="res://CharacterBody3D.gd" id="1_502fm"]
+[ext_resource type="Script" uid="uid://dweb0ikp88kls" path="res://Scripts/player_behavior.gd" id="1_502fm"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ua1y4"]
 

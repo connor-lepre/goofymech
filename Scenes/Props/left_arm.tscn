@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://ek0emnpsbghn"]
+
+[node name="LeftArm" type="Node3D"]

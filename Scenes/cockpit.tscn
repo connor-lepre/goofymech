@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://dru60kpstsqwb"]
+
+[ext_resource type="PackedScene" uid="uid://br01chminlckq" path="res://Scenes/player.tscn" id="1_7bcca"]
+[ext_resource type="PackedScene" uid="uid://kqpa4617xnld" path="res://Scenes/Props/button.tscn" id="2_666i4"]
+[ext_resource type="PackedScene" uid="uid://ck3weatx4ste5" path="res://Scenes/Props/plane.tscn" id="3_eb8tt"]
+
+[node name="cockpit" type="Node3D"]
+
+[node name="player" parent="." groups=["player"] instance=ExtResource("1_7bcca")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1, 0)
+
+[node name="Camera" type="Camera3D" parent="player"]
+transform = Transform3D(0.999957, 2.99752e-05, -0.00928451, 0, 0.999995, 0.00322851, 0.00928456, -0.00322837, 0.999952, -0.0689928, 0.029552, -0.276869)
+current = true
+fov = 85.0
+
+[node name="button" parent="." instance=ExtResource("2_666i4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -0.8, 6)
+
+[node name="button2" parent="." instance=ExtResource("2_666i4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -0.8, 6)
+
+[node name="ground" parent="." instance=ExtResource("3_eb8tt")]
+transform = Transform3D(1, 0, 0, 0, 0.999911, -0.013316, 0, 0.013316, 0.999911, 0, -1, 0)
+
+[node name="wall" parent="." instance=ExtResource("3_eb8tt")]
+transform = Transform3D(-4.37114e-08, -1, -6.95929e-16, 0.999903, -4.37071e-08, -0.0139621, 0.0139621, -6.10305e-10, 0.999903, 6, 0, 0)
+
+[node name="wall2" parent="." instance=ExtResource("3_eb8tt")]
+transform = Transform3D(-4.37114e-08, -1, -6.95929e-16, 0.999903, -4.37071e-08, -0.0139621, 0.0139621, -6.10305e-10, 0.999903, -6, 0, 0)
+
+[node name="wall3" parent="." instance=ExtResource("3_eb8tt")]
+transform = Transform3D(0.0139622, 4.31011e-08, 0.999903, 0.999903, -4.37071e-08, -0.0139622, 4.31011e-08, 1, -4.37071e-08, 0, 0, -6)
+
+[node name="roof" parent="." instance=ExtResource("3_eb8tt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8, 0)

@@ -5,8 +5,8 @@ extends CharacterBody3D
 const JUMP_VELOCITY = 3.0
 
 # Player stuff
-@export var base_speed = 2.0
-@export var sprint_speed = 2.0
+@export var base_speed = 2.5
+@export var sprint_speed = 3.0
 @export var sensivity = 0.3
 var fov = false
 var lerp_speed = 10
@@ -69,8 +69,8 @@ func _physics_process(delta):
 		velocity.z = direction.z * speed
 		is_moving = true
 	else:
-		velocity.x = move_toward(velocity.x, 0, speed)
-		velocity.z = move_toward(velocity.z, 0, speed)
+		velocity.x = move_toward(velocity.x, 0, (delta * speed * 3))
+		velocity.z = move_toward(velocity.z, 0, (delta * speed * 3))
 		is_moving = false
 
 	move_and_slide()
