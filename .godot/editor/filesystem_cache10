@@ -1,0 +1,13 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1757732501
+button.tscn::PackedScene::735830807627871461::1757732267::0::1::::<><><>0<>0<><>::
+CharacterBody3D.gd::GDScript/GDScript::8711779920334428328::1757727639::0::1::::<>CharacterBody3D<><>0<>0<><>::
+cockpit.tscn::PackedScene::8395687368879954413::1757732315::0::1::::<><><>0<>0<><>::uid://br01chminlckq::::res://player.tscn<>uid://kqpa4617xnld::::res://button.tscn<>uid://ck3weatx4ste5::::res://static_body_3d.tscn
+player.tscn::PackedScene::3632823069373278612::1757732267::0::1::::<><><>0<>0<><>::uid://dweb0ikp88kls::::res://CharacterBody3D.gd
+README.md::TextFile::-1::1757732466::0::1::::<><><>0<>0<><>::
+static_body_3d.tscn::PackedScene::5533875328332463474::1757732267::0::1::::<><><>0<>0<><>::
+Template_preview.png::CompressedTexture2D/CompressedTexture2D::5184239248784672923::1757719957::1757719968::1::::<><><>0<>0<>832a5b32c9c1a5ef37da3bf4c53d8878<>res://.godot/imported/Template_preview.png-8ae92dfba79b7c364868d06d4baea864.ctex::
+::res://Attributions/::1757732484
+::res://Attributions/First Person Template - SoyKhaler/::1757732484
+icon.png::CompressedTexture2D/CompressedTexture2D::9084634714520757762::1757719957::1757721300::1::::<><><>0<>0<>2ba25da2c6a50bdd6d33a4665c4ddc3f<>res://.godot/imported/icon.png-21be6bd9f1576b05f1bef793f4f886c4.ctex::
+LICENSE.txt::TextFile/TextFile::-1::1757719957::0::1::::<><><>0<>0<><>::
