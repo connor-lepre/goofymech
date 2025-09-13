@@ -1,7 +1,23 @@
-[gd_scene format=3 uid="uid://cnuq50kdmutod"]
+[gd_scene load_steps=5 format=3 uid="uid://cnuq50kdmutod"]
 
-[node name="Enemy" type="Node3D"]
+[ext_resource type="Script" uid="uid://dnyiagidrypow" path="res://Scripts/enemy_behavior.gd" id="1_0oukh"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_psqew"]
+radius = 6.0
+height = 12.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0oukh"]
+albedo_color = Color(0.596024, 0.224827, 0.186175, 1)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_psqew"]
+radius = 6.0
+
+[node name="Enemy" type="AnimatableBody3D"]
+script = ExtResource("1_0oukh")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_psqew")
+surface_material_override/0 = SubResource("StandardMaterial3D_0oukh")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_psqew")

@@ -1,0 +1,88 @@
+[gd_scene load_steps=7 format=3 uid="uid://cjq2ob4m6dyiw"]
+
+[ext_resource type="PackedScene" uid="uid://dru60kpstsqwb" path="res://Scenes/cockpit.tscn" id="1_6pun2"]
+[ext_resource type="PackedScene" uid="uid://c06qqp6irwmvk" path="res://Scenes/Levels/level0.tscn" id="2_nbifx"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_k5f4k"]
+sky_top_color = Color(0.425571, 0.577482, 0.69575, 1)
+sky_curve = 0.0699775
+ground_bottom_color = Color(0.430268, 0.547804, 0.550029, 1)
+ground_horizon_color = Color(0.778658, 0.850847, 0.907799, 1)
+ground_curve = 0.298573
+ground_energy_multiplier = 1.79
+sun_angle_max = 0.0
+sun_curve = 8.07257
+energy_multiplier = 0.5
+
+[sub_resource type="Sky" id="Sky_xac0c"]
+sky_material = SubResource("ProceduralSkyMaterial_k5f4k")
+radiance_size = 4
+
+[sub_resource type="Environment" id="Environment_6phgx"]
+background_mode = 2
+background_color = Color(1, 1, 1, 1)
+sky = SubResource("Sky_xac0c")
+ambient_light_source = 3
+ambient_light_color = Color(0.869914, 0.881924, 0.819771, 1)
+ambient_light_energy = 3.0
+ssr_enabled = true
+ssao_enabled = true
+ssao_radius = 1.32
+ssil_enabled = true
+ssil_radius = 8.37
+sdfgi_read_sky_light = false
+sdfgi_bounce_feedback = 0.1
+sdfgi_cascades = 8
+sdfgi_min_cell_size = 0.1
+sdfgi_cascade0_distance = 6.4
+sdfgi_max_distance = 1638.4
+sdfgi_energy = 0.1
+glow_enabled = true
+glow_normalized = true
+glow_intensity = 1.0
+glow_strength = 0.5
+glow_bloom = 0.39
+fog_enabled = true
+fog_light_color = Color(0.298039, 0.552941, 0.701961, 1)
+fog_light_energy = 3.06
+fog_sun_scatter = 1.0
+fog_density = 0.001
+fog_height = 101.39
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.03
+volumetric_fog_albedo = Color(0.463872, 0.595327, 0.666835, 1)
+volumetric_fog_emission = Color(0, 0, 0.180392, 1)
+volumetric_fog_gi_inject = 2.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_81xng"]
+size = Vector3(160, 1, 160)
+
+[node name="world" type="Node3D"]
+
+[node name="cockpit" parent="." instance=ExtResource("1_6pun2")]
+
+[node name="World" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_6phgx")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.906617, 0.421954, 0, -0.421954, 0.906617, -0.482311, 394.641, 790.095)
+light_energy = 0.5
+light_indirect_energy = 10.0
+light_volumetric_fog_energy = 10.0
+light_angular_distance = 0.5
+shadow_enabled = true
+shadow_bias = 5.0
+shadow_normal_bias = 0.1
+shadow_reverse_cull_face = true
+directional_shadow_split_3 = 0.3
+directional_shadow_blend_splits = true
+
+[node name="respawn collision" type="Area3D" parent="."]
+transform = Transform3D(-0.999957, -2.9975e-05, 0.00928442, 0, 0.999995, 0.00322851, -0.00928447, 0.00322837, -0.999952, 0.0372552, 3.18482, 3.69186)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="respawn collision"]
+transform = Transform3D(1, -2.76528e-12, -2.12374e-09, 2.76529e-12, 1, 2.35589e-09, 2.12374e-09, -2.35589e-09, 1, -2.98023e-08, -14.4009, -4.76837e-07)
+shape = SubResource("BoxShape3D_81xng")
+
+[node name="level" parent="." instance=ExtResource("2_nbifx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -60, 0)

@@ -13,7 +13,10 @@ config_version=5
 config/name="goofymech"
 run/main_scene="uid://cjq2ob4m6dyiw"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://Attributions/First Person Template - SoyKhaler/icon.png"
+
+[autoload]
+
+MechBehavior="*res://Scripts/mech_behavior.gd"
 
 [display]
 
@@ -96,6 +99,14 @@ jump={
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":32,"key_label":0,"unicode":32,"location":0,"echo":false,"script":null)
 ]
 }
+
+[rendering]
+
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=3
+lights_and_shadows/positional_shadow/soft_shadow_filter_quality=3
+shading/overrides/force_vertex_shading=true
+lights_and_shadows/positional_shadow/atlas_quadrant_0_subdiv=3
+lights_and_shadows/positional_shadow/atlas_quadrant_1_subdiv=3
 
 [shader_globals]
 

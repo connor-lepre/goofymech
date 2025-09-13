@@ -69,8 +69,8 @@ func _physics_process(delta):
 		velocity.z = direction.z * speed
 		is_moving = true
 	else:
-		velocity.x = move_toward(velocity.x, 0, (delta * speed * 3))
-		velocity.z = move_toward(velocity.z, 0, (delta * speed * 3))
+		velocity.x = move_toward(velocity.x, 0, (delta * speed * 10))
+		velocity.z = move_toward(velocity.z, 0, (delta * speed * 10))
 		is_moving = false
 
 	move_and_slide()
