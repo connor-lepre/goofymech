@@ -93,55 +93,11 @@ walk_speed = 0.1
 reverse_speed = 0.0
 acceleration = 6.0
 
-[node name="Skeleton3D" parent="Robot/Armature" index="0"]
-bones/0/position = Vector3(-0.0379905, 0.0136373, 0.0086901)
-bones/0/rotation = Quaternion(0.00120289, -0.00226915, -0.0128061, 0.999915)
-bones/1/rotation = Quaternion(-0.0794023, 0.00493229, 0.0131067, 0.996744)
-bones/2/rotation = Quaternion(0.000687383, 0.0118558, 0.00992978, 0.99988)
-bones/3/rotation = Quaternion(0.013548, 0.0119174, 0.00985751, 0.999789)
-bones/4/rotation = Quaternion(-0.0284249, -0.00439382, -0.0142479, 0.999485)
-bones/5/rotation = Quaternion(0.0148925, -0.0290967, -0.0227167, 0.999207)
-bones/6/rotation = Quaternion(-0.491452, 0.562703, -0.516802, -0.418038)
-bones/7/rotation = Quaternion(-0.0957292, 0.00939595, -0.0194165, 0.995174)
-bones/8/rotation = Quaternion(0.126217, 0.0135374, 0.00365075, 0.991904)
-bones/9/rotation = Quaternion(-0.00401839, -0.147189, -0.0687554, 0.986708)
-bones/10/rotation = Quaternion(0.479147, 0.578201, -0.531592, 0.391805)
-bones/11/rotation = Quaternion(-0.0282162, -0.085387, 0.11481, 0.989309)
-bones/12/rotation = Quaternion(0.0105601, 0.0665867, 0.000507585, 0.997725)
-bones/13/rotation = Quaternion(-0.0259663, -0.154522, 0.00267051, 0.987644)
-bones/15/rotation = Quaternion(-0.00975529, -0.105525, 0.992927, -0.0535345)
-bones/16/rotation = Quaternion(0.150567, -0.107138, -0.00532021, 0.982763)
-bones/17/rotation = Quaternion(0.521388, 0.0266467, 0.0205476, 0.852656)
-bones/21/rotation = Quaternion(-0.020319, 0.186544, 0.979107, -0.0783488)
-bones/22/rotation = Quaternion(-0.446298, -0.085131, -0.022052, 0.890553)
-bones/23/rotation = Quaternion(0.380901, -0.0204506, -0.0409465, 0.923482)
-
-[node name="Cube_007" parent="Robot/Armature/Skeleton3D" index="1"]
-transform = Transform3D(0.97646, -0.185598, 0.109904, 0.14433, 0.940855, 0.306531, -0.160295, -0.283453, 0.945494, -0.0400729, -0.976439, -0.0379055)
-
-[node name="Cube_006" parent="Robot/Armature/Skeleton3D" index="2"]
-transform = Transform3D(0.980695, -0.108563, 0.162637, 0.0796974, 0.981419, 0.174541, -0.178564, -0.15821, 0.971124, -0.0758719, -0.690792, -0.090824)
-
-[node name="Cube_005" parent="Robot/Armature/Skeleton3D" index="3"]
-transform = Transform3D(0.996271, -0.0845592, -0.0171576, 0.0786825, 0.971978, -0.221513, 0.0354077, 0.219337, 0.975006, -0.113526, -0.251684, -0.0741838)
-
-[node name="Cube_008" parent="Robot/Armature/Skeleton3D" index="4"]
-transform = Transform3D(0.977295, 0.100678, 0.186433, 0.0303091, 0.804419, -0.593288, -0.209701, 0.585468, 0.783104, 0.119381, -0.892847, -0.106485)
-
-[node name="Cube_013" parent="Robot/Armature/Skeleton3D" index="5"]
-transform = Transform3D(0.981847, -0.0220447, 0.18839, 0.105469, 0.888967, -0.445661, -0.157648, 0.45744, 0.875155, 0.119722, -0.63397, 0.0364908)
-
-[node name="Cube_012" parent="Robot/Armature/Skeleton3D" index="6"]
-transform = Transform3D(0.990638, -0.12118, -0.062869, 0.135646, 0.925681, 0.353149, 0.0154021, -0.35837, 0.933453, 0.0934465, -0.254387, 0.0492646)
-
 [node name="Cube_012" parent="Robot/Armature/Skeleton3D/Cube_012" index="0"]
 surface_material_override/0 = null
 
-[node name="Cube_004" parent="Robot/Armature/Skeleton3D" index="7"]
-transform = Transform3D(0.745608, 0.0191388, -0.00316071, -0.0191045, 0.745574, 0.00788019, 0.0033617, -0.00779657, 0.745812, -0.035863, 0.0898619, -0.0314044)
-
 [node name="cockpit" parent="Robot/Armature/Skeleton3D/Cube_004" index="1" instance=ExtResource("1_6pun2")]
-transform = Transform3D(0.03723, -0.000953934, 0.000167849, 0.000955645, 0.0372283, -0.000389302, -0.000157813, 0.000393477, 0.0372402, -0.0145917, 0.538918, -0.116606)
+transform = Transform3D(0.03723, -0.000953934, 0.000167849, 0.000955645, 0.0372283, -0.000389302, -0.000157813, 0.000393477, 0.0372402, -0.0126421, 0.451685, -0.184921)
 collision_layer = 128
 
 [node name="player" parent="Robot/Armature/Skeleton3D/Cube_004/cockpit" groups=["player"] instance=ExtResource("4_434w7")]
@@ -153,5 +109,8 @@ collision_mask = 129
 transform = Transform3D(0.999957, 2.99752e-05, -0.00928451, 0, 0.999995, 0.00322851, 0.00928456, -0.00322837, 0.999952, -0.0689928, 0.029552, -0.276869)
 current = true
 fov = 85.0
+
+[node name="AnimationPlayer" parent="Robot" index="1"]
+speed_scale = 0.1
 
 [editable path="Robot"]

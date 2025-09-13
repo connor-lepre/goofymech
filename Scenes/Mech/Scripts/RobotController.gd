@@ -10,7 +10,7 @@ extends CharacterBody3D
 
 @export_group("Movement (Tank)")
 @export var auto_forward: bool = false
-@export var walk_speed: float = 4.0
+@export var walk_speed: float = 0.1
 @export var reverse_speed: float = 2.0
 @export var acceleration: float = 12.0
 @export var turn_speed_deg: float = 180.0
@@ -91,7 +91,7 @@ func _handle_movement(delta: float) -> void:
 			if not _anim.is_playing() or _anim.current_animation != walk_anim_name:
 				_play_anim_safe(walk_anim_name)
 			else:
-				_anim.speed_scale = 1.0  # Resume if paused
+				_anim.speed_scale = 0.3  # Resume if paused
 		else:
 			# Idle - pause current animation or play idle
 			if _anim.is_playing():
