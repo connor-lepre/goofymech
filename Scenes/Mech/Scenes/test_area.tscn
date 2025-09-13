@@ -1,0 +1,47 @@
+[gd_scene load_steps=9 format=3 uid="uid://rvpb10j2ksr4"]
+
+[ext_resource type="PackedScene" uid="uid://cbulg0475blst" path="res://Scenes/Mech/Scenes/Robot.tscn" id="1_64fjj"]
+[ext_resource type="Texture2D" uid="uid://bdxs56yrbu4gk" path="res://Scenes/Mech/Shaders/Yellow Grid 1024x1024.png" id="2_rfpkf"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_rfpkf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6fnve"]
+albedo_texture = ExtResource("2_rfpkf")
+uv1_scale = Vector3(100, 100, 100)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6fnve"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_64fjj"]
+energy_multiplier = 7.67
+
+[sub_resource type="Sky" id="Sky_rfpkf"]
+sky_material = SubResource("ProceduralSkyMaterial_64fjj")
+
+[sub_resource type="Environment" id="Environment_6fnve"]
+background_mode = 2
+sky = SubResource("Sky_rfpkf")
+ambient_light_color = Color(0.764511, 0.764511, 0.764511, 1)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Robot" parent="." instance=ExtResource("1_64fjj")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.897203, 0.0528162, -1.07488)
+reverse_speed = 0.1
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(15.1893, 0, 0, 0, 15.1893, 0, 0, 0, 15.1893, 0, -7.56268, 0)
+mesh = SubResource("BoxMesh_rfpkf")
+surface_material_override/0 = SubResource("StandardMaterial3D_6fnve")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(15.1893, 0, 0, 0, 15.1893, 0, 0, 0, 15.1893, 0, -7.56268, 0)
+shape = SubResource("BoxShape3D_6fnve")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 6, 10)
+fov = 24.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_6fnve")

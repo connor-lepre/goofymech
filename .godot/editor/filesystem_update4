@@ -1,9 +1,11 @@
-res://Scenes/Levels/level.tscn
+res://Scenes/Levels/world.tscn
 res://Scenes/cockpit.tscn
 res://Scenes/player.tscn
-res://Scenes/Props/button.tscn
-res://Scenes/Levels/enemy_lane.tscn
 res://Scenes/Enemies/orb_enemy.tscn
-res://Scenes/Levels/world.tscn
-res://Scripts/mech_behavior.gd
 res://Scenes/Levels/level0.tscn
+res://Scenes/Props/button.tscn
+res://Scenes/Mech/Scenes/Robot.tscn
+res://Scenes/Mech/Scenes/test_area.tscn
+res://Scenes/Mech/Scripts/RobotController.gd
+res://Scenes/Mech/Animations/Other_1.res
+res://Scenes/Mech/Animations/walk.res
