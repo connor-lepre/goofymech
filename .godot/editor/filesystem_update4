@@ -10,3 +10,10 @@ res://Scenes/Mech/Scripts/RobotController.gd
 res://Scenes/Mech/Animations/Other_1.res
 res://Scenes/Mech/Animations/walk.res
 res://Scripts/player_behavior.gd
+res://Scenes/Levels/placeholder-floor.tres
+res://Scenes/Mech/Animations/Other.res
+res://Scenes/Mech/Shaders/mech_metal.tres
+res://Scenes/Props/placeholder-button-collider.tres
+res://Scripts/button_behavior.gd
+res://Scripts/enemy_behavior.gd
+res://Scripts/mech_behavior.gd

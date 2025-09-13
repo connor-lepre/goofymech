@@ -1,62 +1,63 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1757800996
+::res://::1757805201
 README.md::TextFile/TextFile::-1::1757732466::0::1::::<><><>0<>0<><>::
 ::res://Attributions/::1757732484
 ::res://Attributions/First Person Template - SoyKhaler/::1757732484
 icon.png::CompressedTexture2D/CompressedTexture2D::9084634714520757762::1757719957::1757721300::1::::<><><>0<>0<>2ba25da2c6a50bdd6d33a4665c4ddc3f<>res://.godot/imported/icon.png-21be6bd9f1576b05f1bef793f4f886c4.ctex::
 LICENSE.txt::TextFile/TextFile::-1::1757719957::0::1::::<><><>0<>0<><>::
-::res://Scenes/::1757800975
-cockpit.tscn::PackedScene::8395687368879954413::1757800792::0::1::::<><><>0<>0<><>::uid://br01chminlckq::::res://Scenes/player.tscn<>uid://kqpa4617xnld::::res://Scenes/Props/button.tscn<>uid://ck3weatx4ste5::::res://Scenes/Props/plane.tscn
+::res://Scenes/::1757805201
+cockpit.tscn::PackedScene::8395687368879954413::1757805201::0::1::::<><><>0<>0<><>::uid://kqpa4617xnld::::res://Scenes/Props/button.tscn<>uid://ck3weatx4ste5::::res://Scenes/Props/plane.tscn
 main.tscn::PackedScene/PackedScene::502802043305854576::1757739192::0::1::::<><><>0<>0<><>::
-player.tscn::PackedScene::3632823069373278612::1757800792::0::1::::<><><>0<>0<><>::uid://dweb0ikp88kls::::res://Scripts/player_behavior.gd
-::res://Scenes/Enemies/::1757800792
-orb_enemy.tscn::PackedScene::5727610264148177515::1757800792::0::1::::<><><>0<>0<><>::uid://dnyiagidrypow::::res://Scripts/enemy_behavior.gd
-::res://Scenes/Levels/::1757800792
-enemy_lane.tscn::PackedScene::961895220015810663::1757795610::0::1::::<><><>0<>0<><>::
-level0.tscn::PackedScene::6592559049425875972::1757800792::0::1::::<><><>0<>0<><>::uid://cnuq50kdmutod::::res://Scenes/Enemies/orb_enemy.tscn
-world.tscn::PackedScene::5439235462022288718::1757800792::0::1::::<><><>0<>0<><>::uid://dru60kpstsqwb::::res://Scenes/cockpit.tscn<>uid://c06qqp6irwmvk::::res://Scenes/Levels/level0.tscn
-::res://Scenes/Mech/::1757800975
-::res://Scenes/Mech/Animations/::1757800975
-Other.res::Animation::2638426224991555908::1757800773::0::1::::<><><>0<>0<><>::
-Other_1.res::Animation::3919826717869947769::1757800773::0::1::::<><><>0<>0<><>::
-walk.res::Animation::2634931431125603692::1757800773::0::1::::<><><>0<>0<><>::
-::res://Scenes/Mech/Mesh/::1757800975
-cockpit_TEST_01.glb::PackedScene::2318584402221857855::1757800773::1757801001::1::::<><><>0<>0<>5ab229e8143ef809e30b95d8e26e9cb2<>res://.godot/imported/cockpit_TEST_01.glb-31755d777d716fbf45ed3d63a934f46b.scn::uid://chgxo3v82iwm::::res://Scenes/Mech/Mesh/cockpit_TEST_01_Jake's Junkyard Kingdom Frame 1.png
-cockpit_TEST_01_Jake's Junkyard Kingdom Frame 1.png::CompressedTexture2D::155234486351634464::1757800773::1757800997::1::::<><><>0<>0<>7974698095647fbf384200783ba260e0<>res://.godot/imported/cockpit_TEST_01_Jake\'s Junkyard Kingdom Frame 1.png-64c7e2024e7c8c04264697cd20546a21.s3tc.ctex::
-cockpit_test_2.glb::PackedScene::8652814070736554469::1757800773::1757801001::1::::<><><>0<>0<>fd55328159ec8706f1a52e59decde356<>res://.godot/imported/cockpit_test_2.glb-aef6fb7d601c436c08410fe78d937232.scn::
-Robot_Walk_02.glb::PackedScene::228460847862900869::1757800773::1757801001::0::::<><><>0<>0<>b5aff405549ecfb811ed196d1ab2a849<>::
-::res://Scenes/Mech/Scenes/::1757800975
-Robot.tscn::PackedScene::4884997727166448459::1757800877::0::1::::<><><>0<>0<><>::uid://drj4npjk2371t::::res://Mech/Scripts/RobotController.gd<>uid://cqkqtc4r37c7v::::res://Mech/Shaders/mech_metal.tres<>uid://bv318dgr60ndh::::res://Mech/Animations/Other_1.res<>uid://bducq2ty7fdge::::res://Mech/Animations/Other.res<>uid://bdsm62w3yq6ou::::res://Mech/Animations/walk.res
-test_area.tscn::PackedScene::1237476220039836167::1757800877::0::1::::<><><>0<>0<><>::uid://cbulg0475blst::::res://Mech/Scenes/Robot.tscn<>uid://bdxs56yrbu4gk::::res://Mech/Shaders/Yellow Grid 1024x1024.png
-::res://Scenes/Mech/Scripts/::1757800975
-RobotController.gd::GDScript::8372836603068448407::1757800773::0::1::::<>CharacterBody3D<><>0<>0<><>::
-::res://Scenes/Mech/Shaders/::1757800975
-48x36.png::CompressedTexture2D::516619271901840690::1757800773::1757801000::1::::<><><>0<>0<>2e5a6460489f51d6de513403a4ecb612<>res://.godot/imported/48x36.png-c247614c8e5899ab19472b652cf67479.s3tc.ctex::
-mech_metal.tres::StandardMaterial3D::5917512195760883581::1757800773::0::1::::<><><>0<>0<><>::
-Yellow Grid 1024x1024.png::CompressedTexture2D::2645616048711235098::1757800773::1757800997::1::::<><><>0<>0<>95e14247c44b7c85653fe4b15397d22a<>res://.godot/imported/Yellow Grid 1024x1024.png-4780eb4a1826d9e7edcd568689a0781e.s3tc.ctex::
+player.tscn::PackedScene::3632823069373278612::1757805201::0::1::::<><><>0<>0<><>::uid://dweb0ikp88kls::::res://Scripts/player_behavior.gd
+::res://Scenes/Enemies/::1757805201
+orb_enemy.tscn::PackedScene::5727610264148177515::1757805201::0::1::::<><><>0<>0<><>::uid://dnyiagidrypow::::res://Scripts/enemy_behavior.gd
+::res://Scenes/Levels/::1757805201
+enemy_lane.tscn::PackedScene::961895220015810663::1757805201::0::1::::<><><>0<>0<><>::
+level0.tscn::PackedScene::6592559049425875972::1757805201::0::1::::<><><>0<>0<><>::uid://cuiaaghxnowgt::::res://Scenes/Levels/placeholder-floor.tres<>uid://cnuq50kdmutod::::res://Scenes/Enemies/orb_enemy.tscn
+placeholder-floor.tres::PlaneMesh::6193133589196022807::1757805201::0::1::::<><><>0<>0<><>::
+world.tscn::PackedScene::5439235462022288718::1757805201::0::1::::<><><>0<>0<><>::uid://dru60kpstsqwb::::res://Scenes/cockpit.tscn<>uid://cbulg0475blst::::res://Scenes/Mech/Scenes/Robot.tscn<>uid://c06qqp6irwmvk::::res://Scenes/Levels/level0.tscn<>uid://br01chminlckq::::res://Scenes/player.tscn
+::res://Scenes/Mech/::1757805201
+::res://Scenes/Mech/Animations/::1757805201
+Other.res::Animation::2638426224991555908::1757805201::0::1::::<><><>0<>0<><>::
+Other_1.res::Animation::3919826717869947769::1757805201::0::1::::<><><>0<>0<><>::
+walk.res::Animation::2634931431125603692::1757805201::0::1::::<><><>0<>0<><>::
+::res://Scenes/Mech/Mesh/::1757805201
+cockpit_TEST_01.glb::PackedScene::2318584402221857855::1757805201::1757805212::1::::<><><>0<>0<>5ab229e8143ef809e30b95d8e26e9cb2<>res://.godot/imported/cockpit_TEST_01.glb-31755d777d716fbf45ed3d63a934f46b.scn::uid://chgxo3v82iwm::::res://Scenes/Mech/Mesh/cockpit_TEST_01_Jake's Junkyard Kingdom Frame 1.png
+cockpit_TEST_01_Jake's Junkyard Kingdom Frame 1.png::CompressedTexture2D::155234486351634464::1757805201::1757805208::1::::<><><>0<>0<>7974698095647fbf384200783ba260e0<>res://.godot/imported/cockpit_TEST_01_Jake\'s Junkyard Kingdom Frame 1.png-64c7e2024e7c8c04264697cd20546a21.s3tc.ctex::
+cockpit_test_2.glb::PackedScene::8652814070736554469::1757805201::1757805212::1::::<><><>0<>0<>fd55328159ec8706f1a52e59decde356<>res://.godot/imported/cockpit_test_2.glb-aef6fb7d601c436c08410fe78d937232.scn::
+Robot_Walk_02.glb::PackedScene::228460847862900869::1757805201::1757805208::0::::<><><>0<>0<>b5aff405549ecfb811ed196d1ab2a849<>::
+::res://Scenes/Mech/Scenes/::1757805201
+Robot.tscn::PackedScene::4884997727166448459::1757805201::0::1::::<><><>0<>0<><>::uid://drj4npjk2371t::::res://Scenes/Mech/Scripts/RobotController.gd<>uid://cqkqtc4r37c7v::::res://Scenes/Mech/Shaders/mech_metal.tres<>uid://bv318dgr60ndh::::res://Scenes/Mech/Animations/Other_1.res<>uid://bducq2ty7fdge::::res://Scenes/Mech/Animations/Other.res<>uid://bdsm62w3yq6ou::::res://Scenes/Mech/Animations/walk.res
+test_area.tscn::PackedScene::1237476220039836167::1757805201::0::1::::<><><>0<>0<><>::uid://cbulg0475blst::::res://Scenes/Mech/Scenes/Robot.tscn<>uid://bdxs56yrbu4gk::::res://Scenes/Mech/Shaders/Yellow Grid 1024x1024.png
+::res://Scenes/Mech/Scripts/::1757805201
+RobotController.gd::GDScript::8372836603068448407::1757805201::0::1::::<>CharacterBody3D<><>0<>0<><>::
+::res://Scenes/Mech/Shaders/::1757805201
+48x36.png::CompressedTexture2D::516619271901840690::1757805201::1757805211::1::::<><><>0<>0<>2e5a6460489f51d6de513403a4ecb612<>res://.godot/imported/48x36.png-c247614c8e5899ab19472b652cf67479.s3tc.ctex::
+mech_metal.tres::StandardMaterial3D::5917512195760883581::1757805201::0::1::::<><><>0<>0<><>::
+Yellow Grid 1024x1024.png::CompressedTexture2D::2645616048711235098::1757805201::1757805208::1::::<><><>0<>0<>95e14247c44b7c85653fe4b15397d22a<>res://.godot/imported/Yellow Grid 1024x1024.png-4780eb4a1826d9e7edcd568689a0781e.s3tc.ctex::
 ::res://Scenes/Menus/::1757735892
 main_menu.tscn::PackedScene/PackedScene::4087052077034196777::1757735891::0::1::::<><><>0<>0<><>::
 pause_menu.tscn::PackedScene/PackedScene::3318635880101518112::1757735891::0::1::::<><><>0<>0<><>::
 settings_menu.tscn::PackedScene/PackedScene::7098337111503637734::1757735892::0::1::::<><><>0<>0<><>::
-::res://Scenes/Mesh/::1757783195
-cockpit_TEST_01.glb::PackedScene/PackedScene::3343224270148610559::1757783132::1757783159::1::::<><><>0<>0<>4d88cc830c1c9edb45f49819bdd8bacb<>res://.godot/imported/cockpit_TEST_01.glb-e07b7de26f9676c6693355712523d936.scn::uid://cqvqsskwrupmi::::res://Scenes/Mesh/cockpit_TEST_01_Jake's Junkyard Kingdom Frame 1.png
-cockpit_TEST_01_Jake's Junkyard Kingdom Frame 1.png::CompressedTexture2D/CompressedTexture2D::7602220734640535965::1757783194::1757783195::1::::<><><>0<>0<>597b2e3613d13700e776448ffd5d46a8<>res://.godot/imported/cockpit_TEST_01_Jake's Junkyard Kingdom Frame 1.png-78515824059b58f6969686ba48166776.s3tc.ctex::
-::res://Scenes/Props/::1757800792
-button.tscn::PackedScene::735830807627871461::1757800792::0::1::::<><><>0<>0<><>::uid://brcg12dw1lr3o::::res://Scripts/button_behavior.gd<>uid://ww8jugjsm815::::res://Scenes/Props/placeholder-button-collider.tres<>uid://dgktp2kssxjkn::::res://Scenes/Mesh/cockpit_TEST_01_Jake's Junkyard Kingdom Frame 1.png
-cockpit_TEST_01.glb::PackedScene/PackedScene::165989737791909304::1757783105::1757783106::1::::<><><>0<>0<>28ac18dd64ac6a0fcb643506cf6e4c48<>res://.godot/imported/cockpit_TEST_01.glb-d457f8ca6cecd9d2f0d5b410dd608a0f.scn::uid://bnyhf11vpq5ul::::res://Scenes/Props/cockpit_TEST_01_Jake's Junkyard Kingdom Frame 1.png
-cockpit_TEST_01_Jake's Junkyard Kingdom Frame 1.png::CompressedTexture2D/CompressedTexture2D::3348856071750718139::1757783106::1757783106::1::::<><><>0<>0<>1c13da2d05b1ec9acb7adae85baf85de<>res://.godot/imported/cockpit_TEST_01_Jake's Junkyard Kingdom Frame 1.png-cae8c7e857eefe1a879085430536d788.s3tc.ctex::
+::res://Scenes/Mesh/::1757805201
+cockpit_TEST_01.glb::PackedScene/PackedScene::3343224270148610559::1757805201::1757805212::1::::<><><>0<>0<>4d88cc830c1c9edb45f49819bdd8bacb<>res://.godot/imported/cockpit_TEST_01.glb-e07b7de26f9676c6693355712523d936.scn::uid://dgktp2kssxjkn::::res://Scenes/Mesh/cockpit_TEST_01_Jake's Junkyard Kingdom Frame 1.png
+cockpit_TEST_01_Jake's Junkyard Kingdom Frame 1.png::CompressedTexture2D/CompressedTexture2D::7602220734640535965::1757805201::1757805208::1::::<><><>0<>0<>597b2e3613d13700e776448ffd5d46a8<>res://.godot/imported/cockpit_TEST_01_Jake\'s Junkyard Kingdom Frame 1.png-78515824059b58f6969686ba48166776.s3tc.ctex::
+::res://Scenes/Props/::1757805201
+button.tscn::PackedScene::735830807627871461::1757805201::0::1::::<><><>0<>0<><>::uid://brcg12dw1lr3o::::res://Scripts/button_behavior.gd<>uid://ww8jugjsm815::::res://Scenes/Props/placeholder-button-collider.tres<>uid://dgktp2kssxjkn::::res://Scenes/Mesh/cockpit_TEST_01_Jake's Junkyard Kingdom Frame 1.png
+cockpit_TEST_01.glb::PackedScene/PackedScene::165989737791909304::1757805201::1757805212::1::::<><><>0<>0<>28ac18dd64ac6a0fcb643506cf6e4c48<>res://.godot/imported/cockpit_TEST_01.glb-d457f8ca6cecd9d2f0d5b410dd608a0f.scn::uid://bnyhf11vpq5ul::::res://Scenes/Props/cockpit_TEST_01_Jake's Junkyard Kingdom Frame 1.png
+cockpit_TEST_01_Jake's Junkyard Kingdom Frame 1.png::CompressedTexture2D/CompressedTexture2D::3348856071750718139::1757805201::1757805208::1::::<><><>0<>0<>1c13da2d05b1ec9acb7adae85baf85de<>res://.godot/imported/cockpit_TEST_01_Jake\'s Junkyard Kingdom Frame 1.png-cae8c7e857eefe1a879085430536d788.s3tc.ctex::
 left_arm.tscn::PackedScene/PackedScene::302924871155799515::1757736152::0::1::::<><><>0<>0<><>::
 mech.tscn::PackedScene/PackedScene::6189822027094912699::1757736170::0::1::::<><><>0<>0<><>::
-placeholder-button-collider.tres::BoxShape3D/BoxShape3D::1591591663701777846::1757784943::0::1::::<><><>0<>0<><>::
+placeholder-button-collider.tres::BoxShape3D/BoxShape3D::1591591663701777846::1757805201::0::1::::<><><>0<>0<><>::
 plane.tscn::PackedScene/PackedScene::5533875328332463474::1757739192::0::1::::<><><>0<>0<><>::
 prop_cockpit.tscn::PackedScene/PackedScene::139718548120710837::1757736207::0::1::::<><><>0<>0<><>::uid://kqpa4617xnld::::res://Scenes/Props/button.tscn<>uid://ck3weatx4ste5::::res://Scenes/Props/plane.tscn
 right_arm.tscn::PackedScene/PackedScene::5310402338056754403::1757736160::0::1::::<><><>0<>0<><>::
-::res://Scripts/::1757797482
-button_behavior.gd::GDScript/GDScript::3584171937445541378::1757788643::0::1::::<>Node<><>0<>0<><>::
-cockpit_TEST_01.glb::PackedScene/PackedScene::1910087016255549423::1757783067::1757783005::1::::<><><>0<>0<>ffcb1af79c1011337fcc6cfeaab7fc4d<>res://.godot/imported/cockpit_TEST_01.glb-5a383dba61cf65c42f9953332e9deba6.scn::uid://b83smp365f0vq::::res://Scripts/cockpit_TEST_01_Jake's Junkyard Kingdom Frame 1.png
-cockpit_TEST_01_Jake's Junkyard Kingdom Frame 1.png::CompressedTexture2D/CompressedTexture2D::4761570268812088742::1757783005::1757783006::1::::<><><>0<>0<>81f126413a5706a1de2b34d940b2a1c4<>res://.godot/imported/cockpit_TEST_01_Jake's Junkyard Kingdom Frame 1.png-eb67c03a58ef60d22872c2ede1f88693.s3tc.ctex::
-enemy_behavior.gd::GDScript/GDScript::8121748148071811806::1757790080::0::1::::<>Node<><>0<>0<><>::
-enemy_spawner.gd::GDScript/GDScript::3178507873051385881::1757790108::0::1::::<>Node<><>0<>0<><>::
+::res://Scripts/::1757805201
+button_behavior.gd::GDScript/GDScript::3584171937445541378::1757805201::0::1::::<>Node<><>0<>0<><>::
+cockpit_TEST_01.glb::PackedScene/PackedScene::1910087016255549423::1757805201::1757805212::1::::<><><>0<>0<>ffcb1af79c1011337fcc6cfeaab7fc4d<>res://.godot/imported/cockpit_TEST_01.glb-5a383dba61cf65c42f9953332e9deba6.scn::uid://b83smp365f0vq::::res://Scripts/cockpit_TEST_01_Jake's Junkyard Kingdom Frame 1.png
+cockpit_TEST_01_Jake's Junkyard Kingdom Frame 1.png::CompressedTexture2D/CompressedTexture2D::4761570268812088742::1757805201::1757805208::1::::<><><>0<>0<>81f126413a5706a1de2b34d940b2a1c4<>res://.godot/imported/cockpit_TEST_01_Jake\'s Junkyard Kingdom Frame 1.png-eb67c03a58ef60d22872c2ede1f88693.s3tc.ctex::
+enemy_behavior.gd::GDScript/GDScript::8121748148071811806::1757805201::0::1::::<>Node<><>0<>0<><>::
+enemy_spawner.gd::GDScript/GDScript::3178507873051385881::1757805201::0::1::::<>Node<><>0<>0<><>::
 main.gd::GDScript/GDScript::2181463603481606093::1757736306::0::1::::<>Node<><>0<>0<><>::
-mech_behavior.gd::GDScript::7036090442339390986::1757797482::0::1::::<>Node<><>0<>0<><>::
-player_behavior.gd::GDScript/GDScript::8711779920334428328::1757782295::0::1::::<>CharacterBody3D<><>0<>0<><>::
+mech_behavior.gd::GDScript::7036090442339390986::1757805201::0::1::::<>Node<><>0<>0<><>::
+player_behavior.gd::GDScript::8711779920334428328::1757805201::0::1::::<>CharacterBody3D<><>0<>0<><>::
