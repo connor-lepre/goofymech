@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://cjq2ob4m6dyiw"]
+[gd_scene load_steps=10 format=3 uid="uid://cjq2ob4m6dyiw"]
 
 [ext_resource type="PackedScene" uid="uid://dru60kpstsqwb" path="res://Scenes/cockpit.tscn" id="1_6pun2"]
 [ext_resource type="PackedScene" uid="uid://cbulg0475blst" path="res://Scenes/Mech/Scenes/Robot.tscn" id="2_434w7"]
 [ext_resource type="PackedScene" uid="uid://c06qqp6irwmvk" path="res://Scenes/Levels/level0.tscn" id="2_nbifx"]
 [ext_resource type="PackedScene" uid="uid://br01chminlckq" path="res://Scenes/player.tscn" id="4_434w7"]
+[ext_resource type="Script" uid="uid://c7hchicm5lsgu" path="res://Scripts/button_strafe.gd" id="4_q3jv7"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_k5f4k"]
 sky_top_color = Color(0.425571, 0.577482, 0.69575, 1)
@@ -89,8 +90,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -60, 0)
 
 [node name="Robot" parent="." instance=ExtResource("2_434w7")]
 transform = Transform3D(-36, 0, -5.43585e-06, 0, 36, 0, 5.43585e-06, 0, -36, 0, -56.2618, 0)
+auto_forward = true
 walk_speed = 0.1
-reverse_speed = 0.0
 acceleration = 6.0
 
 [node name="Cube_012" parent="Robot/Armature/Skeleton3D/Cube_012" index="0"]
@@ -99,6 +100,17 @@ surface_material_override/0 = null
 [node name="cockpit" parent="Robot/Armature/Skeleton3D/Cube_004" index="1" instance=ExtResource("1_6pun2")]
 transform = Transform3D(0.03723, -0.000953934, 0.000167849, 0.000955645, 0.0372283, -0.000389302, -0.000157813, 0.000393477, 0.0372402, -0.0126421, 0.451685, -0.184921)
 collision_layer = 128
+
+[node name="button" parent="Robot/Armature/Skeleton3D/Cube_004/cockpit" index="5"]
+script = ExtResource("4_q3jv7")
+move_distance = 20.0
+move_speed = 10.0
+
+[node name="button2" parent="Robot/Armature/Skeleton3D/Cube_004/cockpit" index="6"]
+script = ExtResource("4_q3jv7")
+button_id = "button2"
+move_distance = 20.0
+move_speed = 10.0
 
 [node name="player" parent="Robot/Armature/Skeleton3D/Cube_004/cockpit" groups=["player"] instance=ExtResource("4_434w7")]
 auto_translate_mode = 1
@@ -113,4 +125,10 @@ fov = 85.0
 [node name="AnimationPlayer" parent="Robot" index="1"]
 speed_scale = 0.1
 
+[connection signal="button1_movement_complete" from="Robot" to="Robot/Armature/Skeleton3D/Cube_004/cockpit/button" method="_on_movement_complete"]
+[connection signal="button2_movement_complete" from="Robot" to="Robot/Armature/Skeleton3D/Cube_004/cockpit/button2" method="_on_movement_complete"]
+[connection signal="move_robot_left" from="Robot/Armature/Skeleton3D/Cube_004/cockpit/button" to="Robot" method="_on_button_move_robot_left"]
+[connection signal="move_robot_right" from="Robot/Armature/Skeleton3D/Cube_004/cockpit/button2" to="Robot" method="_on_button_move_robot_right"]
+
 [editable path="Robot"]
+[editable path="Robot/Armature/Skeleton3D/Cube_004/cockpit"]

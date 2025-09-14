@@ -26,7 +26,6 @@ ambient_light_color = Color(0.764511, 0.764511, 0.764511, 1)
 
 [node name="Robot" parent="." instance=ExtResource("1_64fjj")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.897203, 0.0528162, -1.07488)
-reverse_speed = 0.1
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 

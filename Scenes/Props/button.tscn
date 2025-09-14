@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=4 uid="uid://kqpa4617xnld"]
 
-[ext_resource type="Script" uid="uid://brcg12dw1lr3o" path="res://Scripts/button_behavior.gd" id="1_yvjlo"]
+[ext_resource type="Script" uid="uid://c7hchicm5lsgu" path="res://Scripts/button_strafe.gd" id="1_383fr"]
 [ext_resource type="Shape3D" uid="uid://ww8jugjsm815" path="res://Scenes/Props/placeholder-button-collider.tres" id="2_383fr"]
 [ext_resource type="Texture2D" uid="uid://dgktp2kssxjkn" path="res://Scenes/Mesh/cockpit_TEST_01_Jake's Junkyard Kingdom Frame 1.png" id="3_383fr"]
 
@@ -91,7 +91,7 @@ size = Vector3(1.5, 0.14, 1.6)
 size = Vector3(1.6, 0.170605, 1.6)
 
 [node name="button" type="Node3D" groups=["button"]]
-script = ExtResource("1_yvjlo")
+script = ExtResource("1_383fr")
 
 [node name="buttonframe" type="StaticBody3D" parent="."]
 
