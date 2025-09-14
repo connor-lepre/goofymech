@@ -1,69 +1,33 @@
-[gd_scene load_steps=10 format=3 uid="uid://cjq2ob4m6dyiw"]
+[gd_scene load_steps=12 format=3 uid="uid://cjq2ob4m6dyiw"]
 
 [ext_resource type="PackedScene" uid="uid://dru60kpstsqwb" path="res://Scenes/cockpit.tscn" id="1_6pun2"]
 [ext_resource type="PackedScene" uid="uid://cbulg0475blst" path="res://Scenes/Mech/Scenes/Robot.tscn" id="2_434w7"]
 [ext_resource type="PackedScene" uid="uid://c06qqp6irwmvk" path="res://Scenes/Levels/level0.tscn" id="2_nbifx"]
 [ext_resource type="PackedScene" uid="uid://br01chminlckq" path="res://Scenes/player.tscn" id="4_434w7"]
 [ext_resource type="Script" uid="uid://c7hchicm5lsgu" path="res://Scripts/button_strafe.gd" id="4_q3jv7"]
+[ext_resource type="Script" uid="uid://dhenj80gtgpqb" path="res://Scenes/Levels/overhead_camera.gd" id="6_03d5g"]
+[ext_resource type="Shader" uid="uid://xwh1qgsmqd1u" path="res://Scenes/Mesh/pixel.gdshader" id="7_vegga"]
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_k5f4k"]
-sky_top_color = Color(0.425571, 0.577482, 0.69575, 1)
-sky_curve = 0.0699775
-ground_bottom_color = Color(0.430268, 0.547804, 0.550029, 1)
-ground_horizon_color = Color(0.778658, 0.850847, 0.907799, 1)
-ground_curve = 0.298573
-ground_energy_multiplier = 1.79
-sun_angle_max = 0.0
-sun_curve = 8.07257
-energy_multiplier = 0.5
-
-[sub_resource type="Sky" id="Sky_xac0c"]
-sky_material = SubResource("ProceduralSkyMaterial_k5f4k")
-radiance_size = 4
-
-[sub_resource type="Environment" id="Environment_6phgx"]
-background_mode = 2
-background_color = Color(1, 1, 1, 1)
-sky = SubResource("Sky_xac0c")
-ambient_light_source = 3
-ambient_light_color = Color(0.869914, 0.881924, 0.819771, 1)
-ambient_light_energy = 3.0
-ssr_enabled = true
-ssao_enabled = true
-ssao_radius = 1.32
-ssil_enabled = true
-ssil_radius = 8.37
-sdfgi_read_sky_light = false
-sdfgi_bounce_feedback = 0.1
-sdfgi_cascades = 8
-sdfgi_min_cell_size = 0.1
-sdfgi_cascade0_distance = 6.4
-sdfgi_max_distance = 1638.4
-sdfgi_energy = 0.1
-glow_enabled = true
-glow_normalized = true
-glow_intensity = 1.0
-glow_strength = 0.5
-glow_bloom = 0.39
+[sub_resource type="Environment" id="Environment_03d5g"]
 fog_enabled = true
-fog_light_color = Color(0.298039, 0.552941, 0.701961, 1)
-fog_light_energy = 3.06
-fog_sun_scatter = 1.0
-fog_density = 0.001
-fog_height = 101.39
-volumetric_fog_enabled = true
-volumetric_fog_density = 0.03
-volumetric_fog_albedo = Color(0.463872, 0.595327, 0.666835, 1)
-volumetric_fog_emission = Color(0, 0, 0.180392, 1)
-volumetric_fog_gi_inject = 2.0
+fog_light_energy = 1.74
+fog_density = 0.003
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_81xng"]
 size = Vector3(160, 1, 160)
 
+[sub_resource type="QuadMesh" id="QuadMesh_03d5g"]
+flip_faces = true
+size = Vector2(2, 2)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vegga"]
+render_priority = 0
+shader = ExtResource("7_vegga")
+
 [node name="world" type="Node3D"]
 
 [node name="World" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_6phgx")
+environment = SubResource("Environment_03d5g")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.906617, 0.421954, 0, -0.421954, 0.906617, -0.482311, 394.641, 790.095)
@@ -86,7 +50,7 @@ transform = Transform3D(1, -2.76528e-12, -2.12374e-09, 2.76529e-12, 1, 2.35589e-
 shape = SubResource("BoxShape3D_81xng")
 
 [node name="level" parent="." instance=ExtResource("2_nbifx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -60, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -53.9231, 0)
 
 [node name="Robot" parent="." instance=ExtResource("2_434w7")]
 transform = Transform3D(-36, 0, -5.43585e-06, 0, 36, 0, 5.43585e-06, 0, -36, 0, -56.2618, 0)
@@ -94,8 +58,55 @@ auto_forward = true
 walk_speed = 0.1
 acceleration = 6.0
 
+[node name="Skeleton3D" parent="Robot/Armature" index="0"]
+bones/0/position = Vector3(-0.0288827, -0.043241, 0.00994293)
+bones/0/rotation = Quaternion(0.000367385, -0.0627512, -0.00735122, 0.998002)
+bones/1/rotation = Quaternion(-0.0795435, 0.0235993, 0.00170222, 0.996551)
+bones/2/rotation = Quaternion(0.00132167, 0.0484132, 0.000584055, 0.998826)
+bones/3/rotation = Quaternion(0.0146384, 0.0484017, 0.000273187, 0.998721)
+bones/4/rotation = Quaternion(-0.0237912, -0.0282313, 0.0334296, 0.998759)
+bones/5/rotation = Quaternion(0.00280871, -0.0253081, -0.0302773, 0.999217)
+bones/6/rotation = Quaternion(-0.473554, 0.570558, -0.48141, -0.467391)
+bones/7/rotation = Quaternion(-0.0485855, 0.18854, -0.148577, 0.969545)
+bones/8/rotation = Quaternion(0.0528429, 0.217276, 0.00956724, 0.974632)
+bones/9/rotation = Quaternion(-0.113953, -0.0798787, -0.00334036, 0.990264)
+bones/10/rotation = Quaternion(0.463512, 0.593072, -0.533776, 0.385362)
+bones/11/rotation = Quaternion(-0.028251, 0.146186, -0.0106315, 0.988797)
+bones/12/rotation = Quaternion(-0.0208436, 0.037806, 0.0191495, 0.998884)
+bones/13/rotation = Quaternion(-0.0507833, -0.00306722, 0.0467813, 0.997609)
+bones/15/rotation = Quaternion(-0.0683374, -0.337491, 0.938842, 0.00239569)
+bones/16/rotation = Quaternion(0.0936221, -0.161345, 0.0115825, 0.982379)
+bones/17/rotation = Quaternion(0.415086, 0.0384624, 0.0357878, 0.908264)
+bones/21/rotation = Quaternion(-0.0233073, 0.307004, 0.94947, -0.0609294)
+bones/22/rotation = Quaternion(-0.126379, -0.0850003, 0.00893579, 0.988293)
+bones/23/rotation = Quaternion(0.408641, -0.00944989, -0.0234309, 0.912346)
+
+[node name="Cube_002" parent="Robot/Armature/Skeleton3D" index="0"]
+transform = Transform3D(-0.0327727, -0.0396195, 0.998677, -0.0100555, 0.999176, 0.0393093, -0.999412, -0.00875393, -0.0331441, 0.00915536, 0.221694, 0.000421379)
+
+[node name="Cube_007" parent="Robot/Armature/Skeleton3D" index="1"]
+transform = Transform3D(0.976871, -0.211291, 0.0328469, 0.199574, 0.845775, -0.494808, 0.0767676, 0.489919, 0.868381, -0.00698955, -0.893673, -0.523616)
+
+[node name="Cube_006" parent="Robot/Armature/Skeleton3D" index="2"]
+transform = Transform3D(0.99098, -0.120856, 0.057906, 0.13395, 0.90641, -0.400598, -0.00407196, 0.404741, 0.914421, -0.0473772, -0.629862, -0.399166)
+
+[node name="Cube_005" parent="Robot/Armature/Skeleton3D" index="3"]
+transform = Transform3D(0.966129, -0.111549, -0.232704, -0.0651769, 0.767035, -0.638286, 0.249692, 0.631834, 0.733785, -0.0906475, -0.256193, -0.166091)
+
+[node name="Cube_008" parent="Robot/Armature/Skeleton3D" index="4"]
+transform = Transform3D(0.999983, -0.00428547, 0.00380523, 0.002778, 0.943201, 0.332208, -0.00501275, -0.332192, 0.943199, 0.109538, -0.931359, 0.45748)
+
+[node name="Cube_013" parent="Robot/Armature/Skeleton3D" index="5"]
+transform = Transform3D(0.998475, -0.0551731, 0.00167625, 0.0488731, 0.897763, 0.437759, -0.0256574, -0.43701, 0.899091, 0.0960745, -0.663764, 0.334222)
+
+[node name="Cube_012" parent="Robot/Armature/Skeleton3D" index="6"]
+transform = Transform3D(0.984617, -0.017028, -0.173894, 0.115405, 0.810636, 0.574065, 0.131189, -0.585302, 0.800131, 0.0848957, -0.291541, 0.113864)
+
 [node name="Cube_012" parent="Robot/Armature/Skeleton3D/Cube_012" index="0"]
 surface_material_override/0 = null
+
+[node name="Cube_004" parent="Robot/Armature/Skeleton3D" index="7"]
+transform = Transform3D(0.739905, 0.0121144, -0.0932755, -0.0109773, 0.745715, 0.00977423, 0.0934161, -0.0083234, 0.73994, -0.0227297, 0.0328983, -0.0298971)
 
 [node name="cockpit" parent="Robot/Armature/Skeleton3D/Cube_004" index="1" instance=ExtResource("1_6pun2")]
 transform = Transform3D(0.03723, -0.000953934, 0.000167849, 0.000955645, 0.0372283, -0.000389302, -0.000157813, 0.000393477, 0.0372402, -0.0126421, 0.451685, -0.184921)
@@ -122,8 +133,48 @@ transform = Transform3D(0.999957, 2.99752e-05, -0.00928451, 0, 0.999995, 0.00322
 current = true
 fov = 85.0
 
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Robot/Armature/Skeleton3D/Cube_004/cockpit/player/Camera"]
+transform = Transform3D(0.997725, 0.0337661, 0.0583622, -0.0334437, 0.99942, -0.00649258, -0.0585475, 0.00452596, 0.998275, 0.78761, -0.101796, -1.08703)
+extra_cull_margin = 16384.0
+mesh = SubResource("QuadMesh_03d5g")
+surface_material_override/0 = SubResource("ShaderMaterial_vegga")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Robot/Armature/Skeleton3D/Cube_004" index="2"]
+transform = Transform3D(-0.0371315, -0.00287215, -0.00012618, -0.00286584, 0.0371083, -0.00133134, 0.000228398, -0.00131766, -0.0372186, -0.0115762, 0.254071, 0.0321822)
+light_color = Color(0.136981, 0.573242, 0.802528, 1)
+light_energy = 10000.0
+spot_range = 11.1386
+spot_angle = 40.7812
+
 [node name="AnimationPlayer" parent="Robot" index="1"]
 speed_scale = 0.1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="CanvasLayer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="SubViewport" type="SubViewport" parent="CanvasLayer/SubViewportContainer"]
+size = Vector2i(600, 600)
+
+[node name="OverheadCamera" type="Camera3D" parent="CanvasLayer/SubViewportContainer/SubViewport" node_paths=PackedStringArray("target")]
+transform = Transform3D(0.673348, 0, -0.739326, 0, 1, 0, 0.739326, 0, 0.673348, -60.8169, -23.0157, 74.8151)
+script = ExtResource("6_03d5g")
+target = NodePath("../../../../Robot/Armature/Skeleton3D/Cube_004/cockpit")
+orbit_distance = 60.0
+orbit_height = 30.0
+orbit_speed = 20.0
+shake_intensity = 0.1
+shake_speed = 6.0
+
+[node name="OmniLight3D" type="OmniLight3D" parent="CanvasLayer/SubViewportContainer/SubViewport/OverheadCamera"]
+light_energy = 50.0
+omni_range = 199.803
 
 [connection signal="button1_movement_complete" from="Robot" to="Robot/Armature/Skeleton3D/Cube_004/cockpit/button" method="_on_movement_complete"]
 [connection signal="button2_movement_complete" from="Robot" to="Robot/Armature/Skeleton3D/Cube_004/cockpit/button2" method="_on_movement_complete"]

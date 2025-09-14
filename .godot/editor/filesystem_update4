@@ -11,3 +11,5 @@ res://Scenes/Mech/Scripts/RobotController.gd
 res://Scenes/Levels/level.gd
 res://Scripts/button_behavior.gd
 res://Scripts/player_behavior.gd
+res://Scenes/Levels/overhead_camera.gd
+res://Scenes/Mesh/pixel.gdshader
