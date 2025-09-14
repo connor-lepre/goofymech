@@ -1,4 +1,5 @@
 res://Scenes/Levels/world.tscn
+res://Scenes/Mesh/pixel.gdshader
 res://Scenes/cockpit.tscn
 res://Scenes/player.tscn
 res://Scenes/Enemies/orb_enemy.tscn
@@ -6,10 +7,3 @@ res://Scenes/Levels/level0.tscn
 res://Scenes/Props/button.tscn
 res://Scenes/Mech/Scenes/Robot.tscn
 res://Scenes/Mech/Scenes/test_area.tscn
-res://Scripts/button_strafe.gd
-res://Scenes/Mech/Scripts/RobotController.gd
-res://Scenes/Levels/level.gd
-res://Scripts/button_behavior.gd
-res://Scripts/player_behavior.gd
-res://Scenes/Levels/overhead_camera.gd
-res://Scenes/Mesh/pixel.gdshader

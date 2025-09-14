@@ -1,3 +1,5 @@
+SubViewport
+Node3D
 MeshInstance3D
 Sprite2D
 SpotLight3D
@@ -5,10 +7,8 @@ OmniLight3D
 DirectionalLight3D
 SubViewportContainer
 Camera3D
-SubViewport
 CanvasLayer
 BoneAttachment3D
 StaticBody3D
 CollisionShape3D
-Node3D
 AnimatableBody3D
