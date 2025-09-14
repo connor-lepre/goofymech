@@ -124,6 +124,7 @@ fov = 85.0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="world/Robot/Armature/Skeleton3D/Cube_004/cockpit/player/Camera"]
 transform = Transform3D(0.997725, 0.0337661, 0.0583622, -0.0334437, 0.99942, -0.00649258, -0.0585475, 0.00452596, 0.998275, 0.78761, -0.101796, -1.08703)
+visible = false
 extra_cull_margin = 16384.0
 mesh = SubResource("QuadMesh_03d5g")
 surface_material_override/0 = SubResource("ShaderMaterial_vegga")
